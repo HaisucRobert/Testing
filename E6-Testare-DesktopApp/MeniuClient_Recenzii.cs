@@ -117,6 +117,11 @@ namespace E6_Testare_DesktopApp
         {
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
 

@@ -39,13 +39,6 @@ namespace E6_Testare_DesktopApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var MeniuClient = new MeniuClient_Camere(ContClient);
-            MeniuClient.ShowDialog();
-            this.Close();
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -159,6 +152,16 @@ namespace E6_Testare_DesktopApp
             var MeniuClient = new MeniuClient_Hotel(ContClient);
             MeniuClient.ShowDialog();
             this.Close();
+        }
+
+        private void cboCamera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

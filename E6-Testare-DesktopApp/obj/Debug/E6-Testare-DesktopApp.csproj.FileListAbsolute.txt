@@ -163,3 +163,43 @@ C:\Users\gabriela\Desktop\Facultate\Master1-2\E6-Testare-DesktopApp-3-29-2019\E6
 C:\Users\gabriela\Desktop\Facultate\Master1-2\E6-Testare-DesktopApp-3-29-2019\E6-Testare-DesktopApp\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.csproj.CoreCompileInputs.cache
 C:\Users\gabriela\Desktop\Facultate\Master1-2\E6-Testare-DesktopApp-3-29-2019\E6-Testare-DesktopApp\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.exe
 C:\Users\gabriela\Desktop\Facultate\Master1-2\E6-Testare-DesktopApp-3-29-2019\E6-Testare-DesktopApp\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.pdb
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.csprojAssemblyReference.cache
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\Interop.LCC11.dll
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\Interop.MSDAOSP.dll
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\Interop.MSDASC.dll
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\Interop.MSXML2.dll
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.exe
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.pdb
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\bin\Debug\E6-Testare-DesktopApp.exe.config
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\bin\Debug\E6-Testare-DesktopApp.exe
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\bin\Debug\E6-Testare-DesktopApp.pdb
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\Interop.Office.dll
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.csproj.ResolveComReference.cache
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.Conectare.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.Contact.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.FormularRapoarte.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.Inregistrare.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuAdministrator.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuAdministrator_AdaugarePersoanl.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient_Camere.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient_Evenimente.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient_Hotel.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient_Istoric.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient_Restaurant.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient_Recenzii.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient_Restaurant_Meniu.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient_Restaurant_Rezervari.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuClient_RezervareCamera.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuPersonalHotel.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuPersonalRestaurant.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuResponsabilEvenimente.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.Start.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.Properties.Resources.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.VizualizareContClient.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.VizualizareContPersonal.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.csproj.GenerateResource.cache
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.csproj.CoreCompileInputs.cache
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\bin\Debug\TestareBD.accdb
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuPersonalHotelPrincipal.resources
+C:\Users\Robert Haisuc\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6_Testare_DesktopApp.MeniuPersonalHotelVerificaDisponibilitatea.resources

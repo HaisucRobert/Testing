@@ -71,7 +71,7 @@ namespace E6_Testare_DesktopApp
                         if (reader.GetValue(2).ToString() == "Personal Hotel")
                         {
                             this.Hide();
-                            var meniu = new MeniuPersonalHotel(idCont);
+                            var meniu = new MeniuPersonalHotelPrincipal(idCont);
                             meniu.ShowDialog();
                             this.Close();
 

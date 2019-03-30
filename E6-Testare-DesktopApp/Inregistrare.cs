@@ -29,6 +29,9 @@ namespace E6_Testare_DesktopApp
         public void btnInregistrare_Click(object sender, EventArgs e)
         {
 
+            conectare.ConectareBazDate();
+            conn = conectare.ConectareBazDate();
+
 
             Boolean valid = true;
             lblDimensiune.ForeColor = System.Drawing.Color.Black;
@@ -116,7 +119,7 @@ namespace E6_Testare_DesktopApp
 
                     try
                     {
-                        // inserarea in conturi
+                    // inserarea in conturi
                         
                         adapter.InsertCommand = new OleDbCommand(insert, conn);
                         adapter.InsertCommand.ExecuteNonQuery();

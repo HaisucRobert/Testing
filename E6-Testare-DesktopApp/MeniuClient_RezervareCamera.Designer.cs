@@ -47,7 +47,7 @@
             // txtSpecificatii
             // 
             this.txtSpecificatii.Location = new System.Drawing.Point(205, 306);
-            this.txtSpecificatii.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSpecificatii.Margin = new System.Windows.Forms.Padding(4);
             this.txtSpecificatii.Name = "txtSpecificatii";
             this.txtSpecificatii.Size = new System.Drawing.Size(476, 78);
             this.txtSpecificatii.TabIndex = 20;
@@ -57,7 +57,7 @@
             // 
             this.txtPret.Enabled = false;
             this.txtPret.Location = new System.Drawing.Point(213, 479);
-            this.txtPret.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPret.Margin = new System.Windows.Forms.Padding(4);
             this.txtPret.Name = "txtPret";
             this.txtPret.Size = new System.Drawing.Size(132, 22);
             this.txtPret.TabIndex = 19;
@@ -67,7 +67,7 @@
             // 
             this.checkOut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.checkOut.Location = new System.Drawing.Point(213, 245);
-            this.checkOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkOut.Margin = new System.Windows.Forms.Padding(4);
             this.checkOut.Name = "checkOut";
             this.checkOut.Size = new System.Drawing.Size(161, 22);
             this.checkOut.TabIndex = 18;
@@ -77,16 +77,17 @@
             // 
             this.cboCamera.FormattingEnabled = true;
             this.cboCamera.Location = new System.Drawing.Point(215, 154);
-            this.cboCamera.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCamera.Margin = new System.Windows.Forms.Padding(4);
             this.cboCamera.Name = "cboCamera";
             this.cboCamera.Size = new System.Drawing.Size(160, 24);
             this.cboCamera.TabIndex = 17;
+            this.cboCamera.SelectedIndexChanged += new System.EventHandler(this.cboCamera_SelectedIndexChanged);
             // 
             // checkIn
             // 
             this.checkIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.checkIn.Location = new System.Drawing.Point(213, 194);
-            this.checkIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkIn.Margin = new System.Windows.Forms.Padding(4);
             this.checkIn.Name = "checkIn";
             this.checkIn.Size = new System.Drawing.Size(161, 22);
             this.checkIn.TabIndex = 16;
@@ -152,7 +153,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic);
             this.button1.Location = new System.Drawing.Point(477, 190);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 41);
             this.button1.TabIndex = 21;
@@ -165,7 +166,7 @@
             this.btnInapoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnInapoi.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
             this.btnInapoi.Location = new System.Drawing.Point(947, 601);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(5);
             this.btnInapoi.Name = "btnInapoi";
             this.btnInapoi.Size = new System.Drawing.Size(279, 76);
             this.btnInapoi.TabIndex = 22;
@@ -178,7 +179,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 18.25F, System.Drawing.FontStyle.Italic);
             this.button2.Location = new System.Drawing.Point(495, 571);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button2.Margin = new System.Windows.Forms.Padding(5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(205, 49);
             this.button2.TabIndex = 23;
@@ -191,7 +192,7 @@
             // 
             this.button3.Font = new System.Drawing.Font("Monotype Corsiva", 12F, System.Drawing.FontStyle.Italic);
             this.button3.Location = new System.Drawing.Point(517, 407);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(173, 41);
             this.button3.TabIndex = 24;
@@ -219,7 +220,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCamera);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MeniuClient_RezervareCamera";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MeniuClient_RezervareCamera";
