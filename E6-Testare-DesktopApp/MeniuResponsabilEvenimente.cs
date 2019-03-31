@@ -48,7 +48,7 @@ namespace E6_Testare_DesktopApp
            
             // verificarea existentei user-ului
             cmdSelectNume = new OleDbCommand("SELECT Nume FROM DetaliiCont where DetaliiCont.idCont = @idCont", conn);
-            cmdSelectNume.Parameters.AddWithValue("@idClient", this.cont);
+            cmdSelectNume.Parameters.AddWithValue("@idCont", this.cont);
             readerNume = cmdSelectNume.ExecuteReader();
 
             readerNume.Read();
