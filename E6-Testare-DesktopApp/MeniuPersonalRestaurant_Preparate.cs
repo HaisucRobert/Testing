@@ -39,7 +39,7 @@ namespace E6_Testare_DesktopApp
         private void button2_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            var AdaugaMeniuPersonal = new MeniuPersonalRestaurant_AdaugaPreparat();
+            var AdaugaMeniuPersonal = new MeniuPersonalRestaurant_AdaugaPreparat(ContPersonal);
             AdaugaMeniuPersonal.ShowDialog();
             this.Close();
 

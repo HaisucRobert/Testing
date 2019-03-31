@@ -18,10 +18,10 @@ namespace E6_Testare_DesktopApp
         OleDbConnection conn;
         object ContPersonal;
 
-        public MeniuPersonalRestaurant_AdaugaPreparat()
+        public MeniuPersonalRestaurant_AdaugaPreparat(object contId)
         {
             InitializeComponent();
-            ContPersonal = ContPersonal;
+            ContPersonal = contId;
         }
 
         private void MeniuPersonalRestaurant_AdaugaPreparat_Load(object sender, EventArgs e)
