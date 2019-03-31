@@ -197,6 +197,42 @@
     <Compile Include="MeniuPersonalRestaurant.Designer.cs">
       <DependentUpon>MeniuPersonalRestaurant.cs</DependentUpon>
     </Compile>
+    <Compile Include="MeniuPersonalRestaurant_AdaugaPreparat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_AdaugaPreparat.Designer.cs">
+      <DependentUpon>MeniuPersonalRestaurant_AdaugaPreparat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_AdaugareMeniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_AdaugareMeniu.Designer.cs">
+      <DependentUpon>MeniuPersonalRestaurant_AdaugareMeniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_Meniuri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_Meniuri.Designer.cs">
+      <DependentUpon>MeniuPersonalRestaurant_Meniuri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_Preparate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_Preparate.Designer.cs">
+      <DependentUpon>MeniuPersonalRestaurant_Preparate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_VizualizareMeniu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_VizualizareMeniu.Designer.cs">
+      <DependentUpon>MeniuPersonalRestaurant_VizualizareMeniu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_VizualizeazaPreparate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniuPersonalRestaurant_VizualizeazaPreparate.Designer.cs">
+      <DependentUpon>MeniuPersonalRestaurant_VizualizeazaPreparate.cs</DependentUpon>
+    </Compile>
     <Compile Include="MeniuResponsabilEvenimente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +324,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MeniuPersonalRestaurant.resx">
       <DependentUpon>MeniuPersonalRestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuPersonalRestaurant_AdaugaPreparat.resx">
+      <DependentUpon>MeniuPersonalRestaurant_AdaugaPreparat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuPersonalRestaurant_AdaugareMeniu.resx">
+      <DependentUpon>MeniuPersonalRestaurant_AdaugareMeniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuPersonalRestaurant_Meniuri.resx">
+      <DependentUpon>MeniuPersonalRestaurant_Meniuri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuPersonalRestaurant_Preparate.resx">
+      <DependentUpon>MeniuPersonalRestaurant_Preparate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuPersonalRestaurant_VizualizareMeniu.resx">
+      <DependentUpon>MeniuPersonalRestaurant_VizualizareMeniu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniuPersonalRestaurant_VizualizeazaPreparate.resx">
+      <DependentUpon>MeniuPersonalRestaurant_VizualizeazaPreparate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MeniuResponsabilEvenimente.resx">
       <DependentUpon>MeniuResponsabilEvenimente.cs</DependentUpon>

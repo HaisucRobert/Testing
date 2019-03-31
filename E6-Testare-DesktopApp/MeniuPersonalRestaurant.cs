@@ -11,7 +11,8 @@ using System.Windows.Forms;
 
 namespace E6_Testare_DesktopApp
 {
-   
+
+
     public partial class MeniuPersonalRestaurant : Form
     {
         ConectareBD conectare = new ConectareBD();
@@ -21,22 +22,6 @@ namespace E6_Testare_DesktopApp
         {
             InitializeComponent();
             cont = idCont;
-        }
-
-        private void btnInapoi_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var Start = new Start();
-            Start.ShowDialog();
-            this.Close();
-        }
-
-        private void btnCont_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            var vizualizareCont = new VizualizareContPersonal(cont);
-            vizualizareCont.ShowDialog();
-            this.Close();
         }
 
         private void MeniuPersonalRestaurant_Load(object sender, EventArgs e)
@@ -55,6 +40,43 @@ namespace E6_Testare_DesktopApp
 
             reader.Read();
             lblNume.Text = Convert.ToString(reader.GetValue(0));
+        }
+
+     
+           
+
+
+        private void btn_preparate_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            var vizualizareMeniu = new MeniuPersonalRestaurant_Preparate();
+            vizualizareMeniu.ShowDialog();
+            this.Close();
+
+        }
+
+        private void btn_meniuri_Click_1(object sender, EventArgs e)
+            {
+                this.Hide();
+                var vizualizareMeniu = new MeniuPersonalRestaurant_Meniuri();
+                vizualizareMeniu.ShowDialog();
+                this.Close();
+            }
+
+        private void btnCont_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            var vizualizareCont = new VizualizareContPersonal(cont);
+            vizualizareCont.ShowDialog();
+            this.Close();
+        }
+
+        private void btnInapoi_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            var Start = new Start();
+            Start.ShowDialog();
+            this.Close();
         }
     }
 }
