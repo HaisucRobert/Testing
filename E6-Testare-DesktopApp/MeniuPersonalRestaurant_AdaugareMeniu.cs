@@ -50,7 +50,7 @@ namespace E6_Testare_DesktopApp
         private void btn_Inapoi_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var Meniu = new MeniuPersonalRestaurant_Meniuri();
+            var Meniu = new MeniuPersonalRestaurant_Meniuri(ContPersonal);
             Meniu.ShowDialog();
             this.Close();
         }
@@ -126,7 +126,7 @@ namespace E6_Testare_DesktopApp
                     //deschidere meniu
 
                     this.Hide();
-                    var meniu = new MeniuPersonalRestaurant_Meniuri();
+                    var meniu = new MeniuPersonalRestaurant_Meniuri(ContPersonal);
                     meniu.ShowDialog();
                     this.Close();
 

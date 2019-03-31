@@ -31,6 +31,7 @@ namespace E6_Testare_DesktopApp
 
             conectare.ConectareBazDate();
             conn = conectare.ConectareBazDate();
+            conn.Open();
 
 
             Boolean valid = true;

@@ -69,9 +69,11 @@ namespace E6_Testare_DesktopApp
 
                         OleDbCommand cmdSelect;
                         OleDbDataReader reader;
-                        cmdSelect = new OleDbCommand("Select NrCamera, DataStart, DataStop from RezervariCamere where RezervariCamere.NrCamera= '" + cboCamera.Text + "' ", conn);
+                        cmdSelect = new OleDbCommand("Select NrCamera, DataStart, DataStop from RezervariCamere where RezervariCamere.NrCamera= @camera ", conn);
+                        cmdSelect.Parameters.AddWithValue("@camera", this.cboCamera.Text);
+                        
+                     
                         reader = cmdSelect.ExecuteReader();
-
                         while (reader.Read())
                         {
                             if ((DateTime.Compare(checkIn.Value, Convert.ToDateTime(reader.GetValue(1))) < 0 && DateTime.Compare(checkOut.Value, Convert.ToDateTime(reader.GetValue(1))) > 0) || (DateTime.Compare(checkIn.Value, Convert.ToDateTime(reader.GetValue(1))) > 0 && DateTime.Compare(checkIn.Value, Convert.ToDateTime(reader.GetValue(2))) < 0))
@@ -161,7 +163,10 @@ namespace E6_Testare_DesktopApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var MeniuClient = new MeniuClient_Camere(ContClient);
+            MeniuClient.ShowDialog();
+            this.Close();
         }
     }
 }

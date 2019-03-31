@@ -184,5 +184,10 @@ namespace E6_Testare_DesktopApp
             MeniuClient.ShowDialog();
             this.Close();
         }
+
+        private void txtParola_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

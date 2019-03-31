@@ -98,7 +98,7 @@
             // 
             this.txtPrenume.Enabled = false;
             this.txtPrenume.Location = new System.Drawing.Point(397, 149);
-            this.txtPrenume.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrenume.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrenume.Name = "txtPrenume";
             this.txtPrenume.Size = new System.Drawing.Size(137, 20);
             this.txtPrenume.TabIndex = 36;
@@ -107,7 +107,7 @@
             // 
             this.txtUser.Enabled = false;
             this.txtUser.Location = new System.Drawing.Point(397, 198);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(2);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(137, 20);
             this.txtUser.TabIndex = 37;
@@ -116,16 +116,18 @@
             // 
             this.txtParola.Enabled = false;
             this.txtParola.Location = new System.Drawing.Point(397, 243);
-            this.txtParola.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtParola.Margin = new System.Windows.Forms.Padding(2);
             this.txtParola.Name = "txtParola";
+            this.txtParola.PasswordChar = '*';
             this.txtParola.Size = new System.Drawing.Size(137, 20);
             this.txtParola.TabIndex = 38;
+            this.txtParola.TextChanged += new System.EventHandler(this.txtParola_TextChanged);
             // 
             // txtEmail
             // 
             this.txtEmail.Enabled = false;
             this.txtEmail.Location = new System.Drawing.Point(397, 292);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(137, 20);
             this.txtEmail.TabIndex = 39;
@@ -134,7 +136,7 @@
             // 
             this.TxtTelefon.Enabled = false;
             this.TxtTelefon.Location = new System.Drawing.Point(397, 335);
-            this.TxtTelefon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtTelefon.Margin = new System.Windows.Forms.Padding(2);
             this.TxtTelefon.Name = "TxtTelefon";
             this.TxtTelefon.Size = new System.Drawing.Size(137, 20);
             this.TxtTelefon.TabIndex = 40;
@@ -143,7 +145,7 @@
             // 
             this.txtNume.Enabled = false;
             this.txtNume.Location = new System.Drawing.Point(397, 108);
-            this.txtNume.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNume.Margin = new System.Windows.Forms.Padding(2);
             this.txtNume.Name = "txtNume";
             this.txtNume.Size = new System.Drawing.Size(137, 20);
             this.txtNume.TabIndex = 31;
@@ -218,7 +220,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(131, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(564, 461);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

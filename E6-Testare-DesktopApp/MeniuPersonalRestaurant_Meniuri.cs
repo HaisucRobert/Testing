@@ -16,9 +16,10 @@ namespace E6_Testare_DesktopApp
         ConectareBD conectare = new ConectareBD();
         OleDbConnection conn;
         object ContPersonal;
-        public MeniuPersonalRestaurant_Meniuri()
+        public MeniuPersonalRestaurant_Meniuri(object idCont)
         {
             InitializeComponent();
+            ContPersonal = idCont;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -43,7 +44,12 @@ namespace E6_Testare_DesktopApp
             conn = conectare.ConectareBazDate();
         }
 
-      
-        
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var AdaugaMeniuPersonal = new MeniuPersonalRestaurant(ContPersonal);
+            AdaugaMeniuPersonal.ShowDialog();
+            this.Close();
+        }
     }
 }

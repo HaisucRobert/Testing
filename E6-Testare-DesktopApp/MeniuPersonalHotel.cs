@@ -95,7 +95,8 @@ namespace E6_Testare_DesktopApp
 
                         OleDbCommand cmdSelect;
                         OleDbDataReader reader;
-                        cmdSelect = new OleDbCommand("Select NrCamera, DataStart, DataStop from RezervariCamere where RezervariCamere.NrCamera= '" + cboCamera.Text + "' ", conn);
+                        cmdSelect = new OleDbCommand("Select NrCamera, DataStart, DataStop from RezervariCamere where RezervariCamere.NrCamera= @camera ", conn);
+                        cmdSelect.Parameters.AddWithValue("@camera", this.cboCamera.Text);
                         reader = cmdSelect.ExecuteReader();
 
                         while (reader.Read())

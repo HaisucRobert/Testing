@@ -63,7 +63,7 @@ namespace E6_Testare_DesktopApp
         {
 
             this.Hide();
-            var MeniuPersonal = new MeniuPersonalRestaurant_Preparate();
+            var MeniuPersonal = new MeniuPersonalRestaurant_Preparate(ContPersonal);
             MeniuPersonal.ShowDialog();
             this.Close();
         }

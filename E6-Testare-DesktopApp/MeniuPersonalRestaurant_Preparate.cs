@@ -17,9 +17,10 @@ namespace E6_Testare_DesktopApp
         OleDbConnection conn;
         object ContPersonal;
 
-        public MeniuPersonalRestaurant_Preparate()
+        public MeniuPersonalRestaurant_Preparate(object idCont)
         {
             InitializeComponent();
+            ContPersonal = idCont;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -51,6 +52,12 @@ namespace E6_Testare_DesktopApp
 
         }
 
-       
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var AdaugaMeniuPersonal = new MeniuPersonalRestaurant(ContPersonal);
+            AdaugaMeniuPersonal.ShowDialog();
+            this.Close();
+        }
     }
 }

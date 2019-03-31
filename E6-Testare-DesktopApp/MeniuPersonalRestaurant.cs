@@ -35,7 +35,7 @@ namespace E6_Testare_DesktopApp
             conn.Open();
             // verificarea existentei user-ului
             cmdSelect = new OleDbCommand("SELECT Nume FROM DetaliiCont where DetaliiCont.idCont = @idCont", conn);
-            cmdSelect.Parameters.AddWithValue("@idClient", this.cont);
+            cmdSelect.Parameters.AddWithValue("@idCont", this.cont);
             reader = cmdSelect.ExecuteReader();
 
             reader.Read();
@@ -49,7 +49,7 @@ namespace E6_Testare_DesktopApp
         private void btn_preparate_Click_1(object sender, EventArgs e)
         {
             this.Hide();
-            var vizualizareMeniu = new MeniuPersonalRestaurant_Preparate();
+            var vizualizareMeniu = new MeniuPersonalRestaurant_Preparate(cont);
             vizualizareMeniu.ShowDialog();
             this.Close();
 
@@ -58,7 +58,7 @@ namespace E6_Testare_DesktopApp
         private void btn_meniuri_Click_1(object sender, EventArgs e)
             {
                 this.Hide();
-                var vizualizareMeniu = new MeniuPersonalRestaurant_Meniuri();
+                var vizualizareMeniu = new MeniuPersonalRestaurant_Meniuri(cont);
                 vizualizareMeniu.ShowDialog();
                 this.Close();
             }
