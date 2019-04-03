@@ -45,7 +45,7 @@ namespace E6_Testare_DesktopApp
             this.btnConectare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnConectare.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConectare.Location = new System.Drawing.Point(197, 593);
-            this.btnConectare.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConectare.Margin = new System.Windows.Forms.Padding(4);
             this.btnConectare.Name = "btnConectare";
             this.btnConectare.Size = new System.Drawing.Size(209, 62);
             this.btnConectare.TabIndex = 0;
@@ -58,7 +58,7 @@ namespace E6_Testare_DesktopApp
             this.btnInregistrare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnInregistrare.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
             this.btnInregistrare.Location = new System.Drawing.Point(864, 593);
-            this.btnInregistrare.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInregistrare.Margin = new System.Windows.Forms.Padding(4);
             this.btnInregistrare.Name = "btnInregistrare";
             this.btnInregistrare.Size = new System.Drawing.Size(209, 62);
             this.btnInregistrare.TabIndex = 1;
@@ -70,7 +70,7 @@ namespace E6_Testare_DesktopApp
             // 
             this.Image.Image = ((System.Drawing.Image)(resources.GetObject("Image.Image")));
             this.Image.Location = new System.Drawing.Point(231, 175);
-            this.Image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Image.Margin = new System.Windows.Forms.Padding(4);
             this.Image.Name = "Image";
             this.Image.Size = new System.Drawing.Size(795, 343);
             this.Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -109,7 +109,7 @@ namespace E6_Testare_DesktopApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Image);

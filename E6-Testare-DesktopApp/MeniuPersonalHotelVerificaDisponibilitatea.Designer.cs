@@ -32,21 +32,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MeniuPersonalHotelVerificaDisponibilitatea));
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.queryToolStrip = new System.Windows.Forms.ToolStrip();
-            this.queryToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.nrCameraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nrPaturiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.detaliiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pretCameraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.camereBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSetCamere = new E6_Testare_DesktopApp.DataSetCamere();
+            this.queryToolStrip = new System.Windows.Forms.ToolStrip();
+            this.queryToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.camereBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.camereTableAdapter = new E6_Testare_DesktopApp.DataSetCamereTableAdapters.CamereTableAdapter();
             this.lblBuna = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.queryToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.camereBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetCamere)).BeginInit();
+            this.queryToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.camereBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,25 +78,6 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(585, 134);
             this.dataGridView1.TabIndex = 38;
-            // 
-            // queryToolStrip
-            // 
-            this.queryToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.queryToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.queryToolStripButton});
-            this.queryToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.queryToolStrip.Name = "queryToolStrip";
-            this.queryToolStrip.Size = new System.Drawing.Size(800, 27);
-            this.queryToolStrip.TabIndex = 39;
-            this.queryToolStrip.Text = "queryToolStrip";
-            // 
-            // queryToolStripButton
-            // 
-            this.queryToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.queryToolStripButton.Name = "queryToolStripButton";
-            this.queryToolStripButton.Size = new System.Drawing.Size(52, 24);
-            this.queryToolStripButton.Text = "Query";
-            this.queryToolStripButton.Click += new System.EventHandler(this.queryToolStripButton_Click);
             // 
             // nrCameraDataGridViewTextBoxColumn
             // 
@@ -132,6 +113,25 @@
             this.dataSetCamere.DataSetName = "DataSetCamere";
             this.dataSetCamere.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // queryToolStrip
+            // 
+            this.queryToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.queryToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.queryToolStripButton});
+            this.queryToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.queryToolStrip.Name = "queryToolStrip";
+            this.queryToolStrip.Size = new System.Drawing.Size(1243, 27);
+            this.queryToolStrip.TabIndex = 39;
+            this.queryToolStrip.Text = "queryToolStrip";
+            // 
+            // queryToolStripButton
+            // 
+            this.queryToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.queryToolStripButton.Name = "queryToolStripButton";
+            this.queryToolStripButton.Size = new System.Drawing.Size(52, 24);
+            this.queryToolStripButton.Text = "Query";
+            this.queryToolStripButton.Click += new System.EventHandler(this.queryToolStripButton_Click);
+            // 
             // camereBindingSource
             // 
             this.camereBindingSource.DataMember = "Camere";
@@ -157,8 +157,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.lblBuna);
             this.Controls.Add(this.queryToolStrip);
             this.Controls.Add(this.dataGridView1);
@@ -167,10 +167,10 @@
             this.Text = "MeniuPersonalHotelVerificaDisponibilitatea";
             this.Load += new System.EventHandler(this.MeniuPersonalHotelVerificaDisponibilitatea_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.queryToolStrip.ResumeLayout(false);
-            this.queryToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.camereBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSetCamere)).EndInit();
+            this.queryToolStrip.ResumeLayout(false);
+            this.queryToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.camereBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

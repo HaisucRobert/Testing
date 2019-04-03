@@ -76,8 +76,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.rezerva_o_camera);
             this.Controls.Add(this.verifica_disponibilitate);
             this.Controls.Add(this.button1);

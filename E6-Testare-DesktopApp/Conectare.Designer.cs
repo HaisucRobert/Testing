@@ -45,7 +45,7 @@
             this.btnInapoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnInapoi.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
             this.btnInapoi.Location = new System.Drawing.Point(952, 590);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnInapoi.Name = "btnInapoi";
             this.btnInapoi.Size = new System.Drawing.Size(209, 62);
             this.btnInapoi.TabIndex = 4;
@@ -58,7 +58,7 @@
             this.btnConectare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnConectare.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
             this.btnConectare.Location = new System.Drawing.Point(683, 590);
-            this.btnConectare.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnConectare.Margin = new System.Windows.Forms.Padding(4);
             this.btnConectare.Name = "btnConectare";
             this.btnConectare.Size = new System.Drawing.Size(209, 62);
             this.btnConectare.TabIndex = 3;
@@ -126,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.lblEroare);
             this.Controls.Add(this.lblUser);

@@ -37,10 +37,10 @@
             // 
             this.btnInapoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnInapoi.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnInapoi.Location = new System.Drawing.Point(699, 471);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInapoi.Location = new System.Drawing.Point(932, 580);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnInapoi.Name = "btnInapoi";
-            this.btnInapoi.Size = new System.Drawing.Size(209, 62);
+            this.btnInapoi.Size = new System.Drawing.Size(279, 76);
             this.btnInapoi.TabIndex = 5;
             this.btnInapoi.Text = "Inapoi";
             this.btnInapoi.UseVisualStyleBackColor = false;
@@ -50,10 +50,10 @@
             // 
             this.btnCamere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnCamere.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnCamere.Location = new System.Drawing.Point(334, 207);
-            this.btnCamere.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCamere.Location = new System.Drawing.Point(445, 255);
+            this.btnCamere.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCamere.Name = "btnCamere";
-            this.btnCamere.Size = new System.Drawing.Size(209, 62);
+            this.btnCamere.Size = new System.Drawing.Size(279, 76);
             this.btnCamere.TabIndex = 6;
             this.btnCamere.Text = "Camere";
             this.btnCamere.UseVisualStyleBackColor = false;
@@ -63,10 +63,10 @@
             // 
             this.btnRezervari.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnRezervari.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnRezervari.Location = new System.Drawing.Point(334, 302);
-            this.btnRezervari.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRezervari.Location = new System.Drawing.Point(445, 372);
+            this.btnRezervari.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnRezervari.Name = "btnRezervari";
-            this.btnRezervari.Size = new System.Drawing.Size(209, 62);
+            this.btnRezervari.Size = new System.Drawing.Size(279, 76);
             this.btnRezervari.TabIndex = 7;
             this.btnRezervari.Text = "Rezervari";
             this.btnRezervari.UseVisualStyleBackColor = false;
@@ -74,13 +74,14 @@
             // 
             // MeniuClient_Hotel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(932, 563);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.btnRezervari);
             this.Controls.Add(this.btnCamere);
             this.Controls.Add(this.btnInapoi);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MeniuClient_Hotel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MeniuClient_Hotel";

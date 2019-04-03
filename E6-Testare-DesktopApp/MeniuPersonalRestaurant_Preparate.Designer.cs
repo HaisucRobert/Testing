@@ -40,10 +40,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button2.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.button2.Location = new System.Drawing.Point(17, 248);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(23, 305);
+            this.button2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(209, 62);
+            this.button2.Size = new System.Drawing.Size(279, 76);
             this.button2.TabIndex = 37;
             this.button2.Text = "Adauga preparat";
             this.button2.UseVisualStyleBackColor = false;
@@ -53,10 +53,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.button1.Location = new System.Drawing.Point(17, 164);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(23, 202);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 62);
+            this.button1.Size = new System.Drawing.Size(279, 76);
             this.button1.TabIndex = 36;
             this.button1.Text = "Vizualizeaza";
             this.button1.UseVisualStyleBackColor = false;
@@ -65,9 +65,10 @@
             // Image
             // 
             this.Image.Image = ((System.Drawing.Image)(resources.GetObject("Image.Image")));
-            this.Image.Location = new System.Drawing.Point(262, 89);
+            this.Image.Location = new System.Drawing.Point(349, 110);
+            this.Image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Image.Name = "Image";
-            this.Image.Size = new System.Drawing.Size(521, 272);
+            this.Image.Size = new System.Drawing.Size(695, 335);
             this.Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Image.TabIndex = 35;
             this.Image.TabStop = false;
@@ -76,10 +77,10 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button3.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.button3.Location = new System.Drawing.Point(540, 375);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(720, 462);
+            this.button3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(209, 62);
+            this.button3.Size = new System.Drawing.Size(279, 76);
             this.button3.TabIndex = 38;
             this.button3.Text = "Inapoi";
             this.button3.UseVisualStyleBackColor = false;
@@ -87,15 +88,17 @@
             // 
             // MeniuPersonalRestaurant_Preparate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Image);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MeniuPersonalRestaurant_Preparate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MeniuPersonalRestaurant_Preparate";
             this.Load += new System.EventHandler(this.MeniuPersonalRestaurant_Preparate_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Image)).EndInit();

@@ -44,7 +44,7 @@
             this.btnInapoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnInapoi.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
             this.btnInapoi.Location = new System.Drawing.Point(901, 581);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(5);
             this.btnInapoi.Name = "btnInapoi";
             this.btnInapoi.Size = new System.Drawing.Size(279, 76);
             this.btnInapoi.TabIndex = 34;
@@ -79,7 +79,7 @@
             this.btnCont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnCont.Font = new System.Drawing.Font("Monotype Corsiva", 14F, System.Drawing.FontStyle.Italic);
             this.btnCont.Location = new System.Drawing.Point(1104, 94);
-            this.btnCont.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCont.Margin = new System.Windows.Forms.Padding(5);
             this.btnCont.Name = "btnCont";
             this.btnCont.Size = new System.Drawing.Size(121, 34);
             this.btnCont.TabIndex = 26;
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.Beneficii);
             this.Controls.Add(this.button2);
@@ -148,7 +148,7 @@
             this.Controls.Add(this.lblNume);
             this.Controls.Add(this.lblBuna);
             this.Controls.Add(this.btnCont);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MeniuResponsabilEvenimente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MeniuResponsabilEvenimente";

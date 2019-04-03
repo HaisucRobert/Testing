@@ -38,9 +38,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(269, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(359, 27);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(422, 483);
+            this.pictureBox1.Size = new System.Drawing.Size(563, 594);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -49,19 +50,20 @@
             // 
             this.treeView1.BackColor = System.Drawing.Color.Bisque;
             this.treeView1.Font = new System.Drawing.Font("Monotype Corsiva", 18F, System.Drawing.FontStyle.Italic);
-            this.treeView1.Location = new System.Drawing.Point(318, 83);
+            this.treeView1.Location = new System.Drawing.Point(424, 102);
+            this.treeView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(323, 352);
+            this.treeView1.Size = new System.Drawing.Size(429, 432);
             this.treeView1.TabIndex = 1;
             // 
             // btnInapoi
             // 
             this.btnInapoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnInapoi.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnInapoi.Location = new System.Drawing.Point(698, 476);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInapoi.Location = new System.Drawing.Point(931, 586);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnInapoi.Name = "btnInapoi";
-            this.btnInapoi.Size = new System.Drawing.Size(209, 62);
+            this.btnInapoi.Size = new System.Drawing.Size(279, 76);
             this.btnInapoi.TabIndex = 26;
             this.btnInapoi.Text = "Inapoi";
             this.btnInapoi.UseVisualStyleBackColor = false;
@@ -69,13 +71,14 @@
             // 
             // MeniuClient_Restaurant_Meniu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(932, 563);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.btnInapoi);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MeniuClient_Restaurant_Meniu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MeniuClient_Restaurant_Meniu";

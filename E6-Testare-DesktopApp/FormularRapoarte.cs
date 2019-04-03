@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,59 +27,49 @@ namespace E6_Testare_DesktopApp
 
             contAdministrator = idCont;
         }
+        Microsoft.Reporting.WinForms.ReportDataSource reportDataSource = new Microsoft.Reporting.WinForms.ReportDataSource();
+
 
         private void button4_Click(object sender, EventArgs e)
         {
-            button3.Show();
-            chart1.Hide();
-            dgvRapoarte.Show();
-            conectare.ConectareBazDate();
-            conn = conectare.ConectareBazDate();
-            conn.Open();
 
-            var q = "SELECT TOP 5 DataStart, COUNT(DataStart) AS NrRezervari FROM RezervariCamere GROUP BY DataStart ORDER BY COUNT(DataStart) DESC";
-            var cmd = new OleDbCommand(q, conn);
-            var da = new OleDbDataAdapter(q, conn);
-            OleDbDataReader reader;
-            reader = cmd.ExecuteReader();
-
-            var ds = new DataSet();
-            da.Fill(ds, "Detalii cont");
-            dgvRapoarte.DataMember = "Detalii cont";
-            dgvRapoarte.DataSource = ds;
+            this.QRzervariTableAdapter.Fill(this.TestareBDDataSet4.QRzervari);
+            this.reportViewer1.RefreshReport();
         }
-
+        
         private void FormularRapoarte_Load(object sender, EventArgs e)
         {
-            button3.Hide();
+            // TODO: This line of code loads data into the 'TestareBDDataSet4.QRzervari' table. You can move, or remove it, as needed.
+            this.QRzervariTableAdapter.Fill(this.TestareBDDataSet4.QRzervari);
+            // TODO: This line of code loads data into the 'TestareBDDataSet4.RezervariRestaurant' table. You can move, or remove it, as needed.
+            this.RezervariRestaurantTableAdapter.Fill(this.TestareBDDataSet4.RezervariRestaurant);
+            // TODO: This line of code loads data into the 'TestareBDDataSet4.QRzervari' table. You can move, or remove it, as needed.
+
+            // TODO: This line of code loads data into the 'TestareBDDataSet4.QRzervari' table. You can move, or remove it, as needed.
+
+            // TODO: This line of code loads data into the 'TestareBDDataSet4.QRzervari' table. You can move, or remove it, as needed.
+
+            this.reportViewer1.RefreshReport();
         }
 
         private void btnMeniuriSucces_Click(object sender, EventArgs e)
         {
-            button3.Show();
-            chart1.Hide();
-            dgvRapoarte.Show();
-            conectare.ConectareBazDate();
-            conn = conectare.ConectareBazDate();
-            conn.Open();
-
-            var q = "SELECT Meniu.[idMeniu], Meniu.[NumeMeniu], Meniu.[Pret] FROM Meniu ";
-            var cmd = new OleDbCommand(q, conn);
-            var da = new OleDbDataAdapter(q, conn);
-            OleDbDataReader reader;
-            reader = cmd.ExecuteReader();
-
-            var ds = new DataSet();
-            da.Fill(ds, "Detalii cont");
-            dgvRapoarte.DataMember = "Detalii cont";
-            dgvRapoarte.DataSource = ds;
+            /*
+            reportViewer1.Clear();
+            this.RezervariRestaurantTableAdapter.Fill(this.TestareBDDataSet4.RezervariRestaurant);
+            
+            reportDataSource.Name = "Reports_GetReport2Report";
+            reportDataSource.Value = TestareBDDataSet4.RezervariRestaurant;
+            ReportDataSource rds = new ReportDataSource("TestareBDDataSet4", RezervariRestaurantTableAdapter.);
+            reportViewer1.LocalReport.DataSources.Add(rds);
+            reportViewer1.LocalReport.ReportEmbeddedResource = "Rezervari totale.rdlc";
+            reportViewer1.RefreshReport();
+            */
         }
 
         private void btnEvenimente_Click(object sender, EventArgs e)
         {
-            button3.Show();
-            chart1.Hide();
-            dgvRapoarte.Show();
+            
             conectare.ConectareBazDate();
             conn = conectare.ConectareBazDate();
             conn.Open();
@@ -91,15 +82,12 @@ namespace E6_Testare_DesktopApp
 
             var ds = new DataSet();
             da.Fill(ds, "Detalii cont");
-            dgvRapoarte.DataMember = "Detalii cont";
-            dgvRapoarte.DataSource = ds;
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            button3.Show();
-            chart1.Hide();
-            dgvRapoarte.Show();
+          
             conectare.ConectareBazDate();
             conn = conectare.ConectareBazDate();
             conn.Open();
@@ -112,15 +100,12 @@ namespace E6_Testare_DesktopApp
 
             var ds = new DataSet();
             da.Fill(ds, "Detalii cont");
-            dgvRapoarte.DataMember = "Detalii cont";
-            dgvRapoarte.DataSource = ds;
+            
         }
 
         private void btnIncasariCamera_Click(object sender, EventArgs e)
         {
-            button3.Show();
-            chart1.Hide();
-            dgvRapoarte.Show();
+           
             conectare.ConectareBazDate();
             conn = conectare.ConectareBazDate();
             conn.Open();
@@ -133,17 +118,12 @@ namespace E6_Testare_DesktopApp
 
             var ds = new DataSet();
             da.Fill(ds, "Detalii cont");
-            dgvRapoarte.DataMember = "Detalii cont";
-            dgvRapoarte.DataSource = ds;
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-            button3.Hide();
-            chart1.Show();
-            chart1.Visible = true;
-            dgvRapoarte.Show();
+            
             conectare.ConectareBazDate();
             conn = conectare.ConectareBazDate();
             conn.Open();
@@ -159,15 +139,14 @@ namespace E6_Testare_DesktopApp
 
             while (reader.Read())
             {
-                chart1.Series["Series1"].Points.AddXY(reader["AnRezervare"].ToString(), reader["Total"].ToString());
+               // chart1.Series["Series1"].Points.AddXY(reader["AnRezervare"].ToString(), reader["Total"].ToString());
 
             }
             reader.Close();
             cmd.Dispose();
 
             da.Fill(ds, "Detalii cont");
-            dgvRapoarte.DataMember = "Detalii cont";
-            dgvRapoarte.DataSource = ds;
+           
 
 
         }
@@ -175,41 +154,7 @@ namespace E6_Testare_DesktopApp
         private void button3_Click(object sender, EventArgs e)
         {
 
-            // creare aplicatie Excel  
-            Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
-            // creare Workbook
-            Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
-            // creating sheet nou
-
-            Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
-
-            app.Visible = true;
-
-
-            worksheet = workbook.Sheets["Sheet1"];
-            worksheet = workbook.ActiveSheet;
-            // schimbare denumire sheet
-            worksheet.Name = "Exportat din aplicatie";
-            // preluare header din grid
-            for (int i = 1; i < dgvRapoarte.Columns.Count + 1; i++)
-            {
-                worksheet.Cells[1, i] = dgvRapoarte.Columns[i - 1].HeaderText;
-            }
-            // stocare rand si coloane pe headerurile respective
-            for (int i = 0; i < dgvRapoarte.Rows.Count - 1; i++)
-            {
-                for (int j = 0; j < dgvRapoarte.Columns.Count; j++)
-                {
-                    worksheet.Cells[i + 2, j + 1] = dgvRapoarte.Rows[i].Cells[j].Value.ToString();
-                }
-            }
-            // salvare aplicatie 
-            //workbook.SaveAs("c:\\output.xls", Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
-            // iesire aplicatie
-            //  app.Quit();
-            workbook.Saved = true;
-            workbook.SaveCopyAs(System.IO.Directory.GetCurrentDirectory() +"\\output.xls");
-            workbook.Close(true, System.IO.Directory.GetCurrentDirectory() + "h:\\output.xls", Type.Missing);
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -219,5 +164,14 @@ namespace E6_Testare_DesktopApp
             Start.ShowDialog();
             this.Close();
         }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportViewer1_Load_1(object sender, EventArgs e)
+        {
+                    }
     }
 }

@@ -85,7 +85,7 @@
             // 
             this.btnHotel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnHotel.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnHotel.Location = new System.Drawing.Point(48, 107);
+            this.btnHotel.Location = new System.Drawing.Point(144, 107);
             this.btnHotel.Margin = new System.Windows.Forms.Padding(5);
             this.btnHotel.Name = "btnHotel";
             this.btnHotel.Size = new System.Drawing.Size(279, 76);
@@ -111,7 +111,7 @@
             // 
             this.btnEvenimente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnEvenimente.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnEvenimente.Location = new System.Drawing.Point(236, 279);
+            this.btnEvenimente.Location = new System.Drawing.Point(144, 279);
             this.btnEvenimente.Margin = new System.Windows.Forms.Padding(5);
             this.btnEvenimente.Name = "btnEvenimente";
             this.btnEvenimente.Size = new System.Drawing.Size(279, 76);
@@ -124,7 +124,7 @@
             // 
             this.btnRecenzii.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnRecenzii.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnRecenzii.Location = new System.Drawing.Point(315, 366);
+            this.btnRecenzii.Location = new System.Drawing.Point(144, 365);
             this.btnRecenzii.Margin = new System.Windows.Forms.Padding(5);
             this.btnRecenzii.Name = "btnRecenzii";
             this.btnRecenzii.Size = new System.Drawing.Size(279, 76);
@@ -137,7 +137,7 @@
             // 
             this.btnContact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnContact.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnContact.Location = new System.Drawing.Point(447, 452);
+            this.btnContact.Location = new System.Drawing.Point(144, 451);
             this.btnContact.Margin = new System.Windows.Forms.Padding(5);
             this.btnContact.Name = "btnContact";
             this.btnContact.Size = new System.Drawing.Size(279, 76);
@@ -191,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.Image);
             this.Controls.Add(this.btnContact);

@@ -40,10 +40,10 @@
             // 
             this.btnRapoarte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnRapoarte.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnRapoarte.Location = new System.Drawing.Point(57, 150);
-            this.btnRapoarte.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRapoarte.Location = new System.Drawing.Point(33, 185);
+            this.btnRapoarte.Margin = new System.Windows.Forms.Padding(5);
             this.btnRapoarte.Name = "btnRapoarte";
-            this.btnRapoarte.Size = new System.Drawing.Size(267, 57);
+            this.btnRapoarte.Size = new System.Drawing.Size(356, 70);
             this.btnRapoarte.TabIndex = 16;
             this.btnRapoarte.Text = "Rapoarte";
             this.btnRapoarte.UseVisualStyleBackColor = false;
@@ -53,10 +53,10 @@
             // 
             this.lblNume.AutoSize = true;
             this.lblNume.Font = new System.Drawing.Font("Monotype Corsiva", 14F, System.Drawing.FontStyle.Italic);
-            this.lblNume.Location = new System.Drawing.Point(846, 56);
-            this.lblNume.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNume.Location = new System.Drawing.Point(1128, 69);
+            this.lblNume.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblNume.Name = "lblNume";
-            this.lblNume.Size = new System.Drawing.Size(51, 22);
+            this.lblNume.Size = new System.Drawing.Size(63, 28);
             this.lblNume.TabIndex = 18;
             this.lblNume.Text = "label2";
             // 
@@ -64,10 +64,10 @@
             // 
             this.lblBuna.AutoSize = true;
             this.lblBuna.Font = new System.Drawing.Font("Monotype Corsiva", 14F, System.Drawing.FontStyle.Italic);
-            this.lblBuna.Location = new System.Drawing.Point(774, 29);
-            this.lblBuna.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBuna.Location = new System.Drawing.Point(1032, 36);
+            this.lblBuna.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblBuna.Name = "lblBuna";
-            this.lblBuna.Size = new System.Drawing.Size(55, 22);
+            this.lblBuna.Size = new System.Drawing.Size(68, 28);
             this.lblBuna.TabIndex = 17;
             this.lblBuna.Text = "Buna, ";
             // 
@@ -75,10 +75,10 @@
             // 
             this.btnCont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnCont.Font = new System.Drawing.Font("Monotype Corsiva", 14F, System.Drawing.FontStyle.Italic);
-            this.btnCont.Location = new System.Drawing.Point(776, 83);
-            this.btnCont.Margin = new System.Windows.Forms.Padding(5);
+            this.btnCont.Location = new System.Drawing.Point(1035, 102);
+            this.btnCont.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnCont.Name = "btnCont";
-            this.btnCont.Size = new System.Drawing.Size(121, 34);
+            this.btnCont.Size = new System.Drawing.Size(161, 42);
             this.btnCont.TabIndex = 19;
             this.btnCont.Text = "Cont";
             this.btnCont.UseVisualStyleBackColor = false;
@@ -88,10 +88,10 @@
             // 
             this.btnInapoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnInapoi.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.btnInapoi.Location = new System.Drawing.Point(675, 489);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(5);
+            this.btnInapoi.Location = new System.Drawing.Point(900, 602);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.btnInapoi.Name = "btnInapoi";
-            this.btnInapoi.Size = new System.Drawing.Size(243, 60);
+            this.btnInapoi.Size = new System.Drawing.Size(324, 74);
             this.btnInapoi.TabIndex = 20;
             this.btnInapoi.Text = "Inapoi";
             this.btnInapoi.UseVisualStyleBackColor = false;
@@ -101,9 +101,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
-            this.button1.Location = new System.Drawing.Point(25, 86);
+            this.button1.Location = new System.Drawing.Point(33, 106);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(267, 57);
+            this.button1.Size = new System.Drawing.Size(356, 70);
             this.button1.TabIndex = 22;
             this.button1.Text = "Creare cont personal";
             this.button1.UseVisualStyleBackColor = false;
@@ -111,16 +112,17 @@
             // 
             // MeniuAdministrator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(932, 563);
+            this.BackColor = System.Drawing.Color.SeaShell;
+            this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnInapoi);
             this.Controls.Add(this.btnCont);
             this.Controls.Add(this.lblNume);
             this.Controls.Add(this.lblBuna);
             this.Controls.Add(this.btnRapoarte);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MeniuAdministrator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MeniuAdministrator";

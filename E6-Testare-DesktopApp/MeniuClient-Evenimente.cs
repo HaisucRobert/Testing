@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Data.OleDb;
+using System.Globalization;
 
 namespace E6_Testare_DesktopApp
 {
@@ -116,31 +117,58 @@ namespace E6_Testare_DesktopApp
 
                             readerselectLocatie.Read();
                             readerselectMeniu.Read();
+                            string insert;
+                            insert = "INSERT INTO SolicitariEvenimente([idCont],[TipEveniment],[idLocatie], [BeneficiiLimuzina], [BeneficiiMuzica], [BeneficiiAranjamentFloral], [BeneficiiDansatori],[BeneficiiAnimatori],[BeneficiiAranjamentBaloane],[Data],[PerioadaDesfasurare],[idMeniu],[Aprobare]) VALUES('" + ContClient + "','" + cboTip.Text + "','" + readerselectLocatie.GetValue(0) + "' ,'" + cboTransport.Text + "','" + cboMuzica.Text + "','" + cboFlori.Text + "','" + cboDansatori.Text + "','" + cboAnimatori.Text + "','" + cboBaloane.Text + "','" + dateTimePicker1.Value.ToShortDateString() + "','" + textBox1.Text + "','" + readerselectMeniu.GetValue(0) + "','in asteptare')";
 
-                            string insert = "INSERT INTO SolicitariEvenimente([idCont],[TipEveniment],[idLocatie], [BeneficiiLimuzina], [BeneficiiMuzica], [BeneficiiAranjamentFloral], [BeneficiiDansatori],[BeneficiiAnimatori],[BeneficiiAranjamentBaloane],[Data],[PerioadaDesfasurare],[idMeniu],[Aprobare]) VALUES('" + ContClient + "','" + cboTip.Text + "','" + readerselectLocatie.GetValue(0) + "' ,'" + cboTransport.Text + "','" + cboMuzica.Text + "','" + cboFlori.Text + "','" + cboDansatori.Text + "','" + cboAnimatori.Text + "','" + cboBaloane.Text + "','" + dateTimePicker1.Value + "','" + textBox1.Text + "','" + readerselectMeniu.GetValue(0) + "','in asteptare')";
                             OleDbCommand cmdInsert;
+                
                             OleDbDataAdapter adapter = new OleDbDataAdapter();
 
                             cmdInsert = new OleDbCommand(insert, conn);
 
-                            try
-                            {
-                                // inserarea in conturi
+            try
+            {
+                // inserarea in conturi
 
-                                adapter.InsertCommand = new OleDbCommand(insert, conn);
-                                adapter.InsertCommand.ExecuteNonQuery();
-                                cmdInsert.Dispose();
-                                MessageBox.Show("Solicitarea dumneavoastra a fost inregistrata");
+                adapter.InsertCommand = new OleDbCommand(insert, conn);
+                adapter.InsertCommand.ExecuteNonQuery();
+                cmdInsert.Dispose();
+                
 
-                            }
-                            catch (OleDbException ex)
-                            {
-                                MessageBox.Show(ex.Message);
-                            }
+            }
+            catch (OleDbException ex)
+            {
+                MessageBox.Show(ex.Message);
+
+                    }
+                            
+
+
+                  // inserarea in conturi
                         
-              
+                        adapter.InsertCommand = new OleDbCommand(insert, conn);
+                        adapter.InsertCommand.ExecuteNonQuery();
+                        cmdInsert.Dispose();
+            OleDbDataReader readerE;
 
-            conn.Close();
+                        // inserarea in detaliicont
+            OleDbCommand cmdSelect2 = new OleDbCommand("SELECT idSolicitare FROM SolicitariEvenimente where SolicitariEvenimente.idCont = @Cont AND SolicitariEvenimente.idLocatie=@Locatie AND SolicitariEvenimente.Data=@Data", conn);
+                        cmdSelect2.Parameters.AddWithValue("@Cont", this.ContClient);
+                        cmdSelect2.Parameters.AddWithValue("@Locatie", readerselectLocatie.GetValue(0));
+                        cmdSelect2.Parameters.AddWithValue("@Data", dateTimePicker1.Value.ToShortDateString());
+                        readerE = cmdSelect2.ExecuteReader();
+
+                        readerE.Read();
+                        OleDbDataAdapter adapter2 = new OleDbDataAdapter();
+                        String insertDetalii = "INSERT INTO Evenimente([idSolicitare],[Pret]) VALUES ('" + readerE.GetValue(0) + "','" + txtPret.Text + "')";
+                        OleDbCommand cmdInsertDetalii = new OleDbCommand(insertDetalii, conn);
+                        adapter2.InsertCommand = new OleDbCommand(insertDetalii, conn);
+                        adapter2.InsertCommand.ExecuteNonQuery();
+                        cmdInsertDetalii.Dispose();
+                        MessageBox.Show("Solicitarea dumneavoastra a fost inregistrata");
+                        conn.Close();
+                        
+          
         }
 
 
@@ -217,17 +245,17 @@ namespace E6_Testare_DesktopApp
                                 lblPret.Visible = true;
                                 txtPret.Visible = true;
 
-                                if (cboLocatii.Text == "Sala conferinte")
+                                if (cboLocatii.Text == "Sala de conferinte")
                                 {
                                     pretsala = 100;
                                 }
 
-                                if (cboLocatii.Text == "Sala evenimente mica")
+                                if (cboLocatii.Text == "Sala de evenimente mica")
                                 {
                                     pretsala = 150;
                                 }
 
-                                if (cboLocatii.Text == "Sala evenimente mare")
+                                if (cboLocatii.Text == "Sala de evenimente mare")
                                 {
                                     pretsala = 300;
                                 }

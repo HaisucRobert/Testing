@@ -60,7 +60,7 @@
             this.btnInregistrare.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnInregistrare.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
             this.btnInregistrare.Location = new System.Drawing.Point(689, 601);
-            this.btnInregistrare.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInregistrare.Margin = new System.Windows.Forms.Padding(4);
             this.btnInregistrare.Name = "btnInregistrare";
             this.btnInregistrare.Size = new System.Drawing.Size(209, 62);
             this.btnInregistrare.TabIndex = 7;
@@ -73,7 +73,7 @@
             this.btnInapoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btnInapoi.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, System.Drawing.FontStyle.Italic);
             this.btnInapoi.Location = new System.Drawing.Point(959, 601);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnInapoi.Name = "btnInapoi";
             this.btnInapoi.Size = new System.Drawing.Size(209, 62);
             this.btnInapoi.TabIndex = 8;
@@ -278,7 +278,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
+            this.BackColor = System.Drawing.Color.SeaShell;
             this.ClientSize = new System.Drawing.Size(1243, 693);
             this.Controls.Add(this.lblNull);
             this.Controls.Add(this.lblUserErr);
