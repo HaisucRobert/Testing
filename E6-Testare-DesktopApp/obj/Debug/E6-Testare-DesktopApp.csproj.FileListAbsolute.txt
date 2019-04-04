@@ -345,7 +345,6 @@ C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\Microsoft.Re
 C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\Microsoft.ReportViewer.Design.dll
 C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
-C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\Microsoft.SqlServer.Types.dll
 C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\EnvDTE.dll
 C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
@@ -396,7 +395,6 @@ C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\ru\Microsoft
 C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
 C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.csproj.CopyComplete
-C:\Users\igabr\source\repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.csprojAssemblyReference.cache
 C:\Users\gabriela\Source\Repos\Testing\E6-Testare-DesktopApp\obj\Debug\Interop.LCC11.dll
 C:\Users\gabriela\Source\Repos\Testing\E6-Testare-DesktopApp\obj\Debug\Interop.MSDAOSP.dll
 C:\Users\gabriela\Source\Repos\Testing\E6-Testare-DesktopApp\obj\Debug\Interop.MSDASC.dll
@@ -500,3 +498,4 @@ C:\Users\gabriela\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\TestareBD
 C:\Users\gabriela\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\E6-Testare-DesktopApp.exe.config
 C:\Users\gabriela\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\E6-Testare-DesktopApp.exe
 C:\Users\gabriela\Source\Repos\Testing\E6-Testare-DesktopApp\bin\Debug\E6-Testare-DesktopApp.pdb
+C:\Users\igabr\Source\Repos\Testing\E6-Testare-DesktopApp\obj\Debug\E6-Testare-DesktopApp.csprojAssemblyReference.cache

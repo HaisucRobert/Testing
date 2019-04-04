@@ -291,6 +291,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TestareBDDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TestareBDDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestareBDDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Validare.cs" />
     <Compile Include="VizualizareContClient.cs">
       <SubType>Form</SubType>
@@ -385,7 +390,8 @@
     <EmbeddedResource Include="MeniuResponsabilEvenimente.resx">
       <DependentUpon>MeniuResponsabilEvenimente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Rezervari totale.rdlc" />
+    <EmbeddedResource Include="Rezervari evenimente.rdlc" />
+    <EmbeddedResource Include="Rezervari restaurant.rdlc" />
     <EmbeddedResource Include="Rezervari.rdlc" />
     <EmbeddedResource Include="Start.resx">
       <DependentUpon>Start.cs</DependentUpon>
@@ -491,6 +497,17 @@
     </None>
     <None Include="TestareBDDataSet4.xss">
       <DependentUpon>TestareBDDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TestareBDDataSet5.xsc">
+      <DependentUpon>TestareBDDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TestareBDDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TestareBDDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TestareBDDataSet5.xss">
+      <DependentUpon>TestareBDDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

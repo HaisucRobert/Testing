@@ -1,4 +1,5 @@
-﻿using Microsoft.Reporting.WinForms;
+﻿using Microsoft.Reporting.Map.WebForms.BingMaps;
+using Microsoft.Reporting.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Warning = Microsoft.Reporting.Map.WebForms.BingMaps.Warning;
 
 namespace E6_Testare_DesktopApp
 {
@@ -32,56 +34,46 @@ namespace E6_Testare_DesktopApp
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+          
+            reportViewer3.Visible = false;
+            reportViewer2.Visible = false;
+            reportViewer1.Visible = true;
             this.QRzervariTableAdapter.Fill(this.TestareBDDataSet4.QRzervari);
             this.reportViewer1.RefreshReport();
         }
         
         private void FormularRapoarte_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'TestareBDDataSet4.QRzervari' table. You can move, or remove it, as needed.
-            this.QRzervariTableAdapter.Fill(this.TestareBDDataSet4.QRzervari);
+            // TODO: This line of code loads data into the 'TestareBDDataSet5.QRezervariEvenimente' table. You can move, or remove it, as needed.
+            this.QRezervariEvenimenteTableAdapter.Fill(this.TestareBDDataSet5.QRezervariEvenimente);
             // TODO: This line of code loads data into the 'TestareBDDataSet4.RezervariRestaurant' table. You can move, or remove it, as needed.
             this.RezervariRestaurantTableAdapter.Fill(this.TestareBDDataSet4.RezervariRestaurant);
-            // TODO: This line of code loads data into the 'TestareBDDataSet4.QRzervari' table. You can move, or remove it, as needed.
+            reportViewer1.Visible = false;
+            reportViewer2.Visible = false;
+            reportViewer3.Visible = false;
 
-            // TODO: This line of code loads data into the 'TestareBDDataSet4.QRzervari' table. You can move, or remove it, as needed.
-
-            // TODO: This line of code loads data into the 'TestareBDDataSet4.QRzervari' table. You can move, or remove it, as needed.
-
-            this.reportViewer1.RefreshReport();
         }
 
         private void btnMeniuriSucces_Click(object sender, EventArgs e)
         {
-            
-
-           // reportViewer1.Clear();
-           // this.RezervariRestaurantTableAdapter.Fill(this.TestareBDDataSet4.RezervariRestaurant);
-           // DataSet ds = GetDataSet();
-            //ReportDataSource rds = new ReportDataSource("RezervariRestaurant", RezervariRestaurantTableAdapter);
-            //ReportViewer1.LocalReport.DataSources.Clear();
-           // ReportViewer1.LocalReport.DataSources.Add(rds);
-           // ReportViewer1.LocalReport.Refresh();
+            reportViewer3.Visible = false;
+            reportViewer2.Visible = true;
+            reportViewer1.Visible = false;
+            this.RezervariRestaurantTableAdapter.Fill(this.TestareBDDataSet4.RezervariRestaurant);
+            this.reportViewer2.RefreshReport();
+          
 
         }
 
         private void btnEvenimente_Click(object sender, EventArgs e)
         {
-            
-            conectare.ConectareBazDate();
-            conn = conectare.ConectareBazDate();
-            conn.Open();
+            reportViewer3.Visible = true;
+            reportViewer2.Visible = false;
+            reportViewer1.Visible = false;
+   
+            this.QRezervariEvenimenteTableAdapter.Fill(this.TestareBDDataSet5.QRezervariEvenimente);
+            this.reportViewer3.RefreshReport();
 
-            var q = "SELECT TOP 5 month(SolicitariEvenimente.Data) AS Luna, Count(Data) AS Numar_de_evenimente FROM SolicitariEvenimente GROUP BY month(SolicitariEvenimente.Data) ORDER BY Count(Data) DESC";
-            var cmd = new OleDbCommand(q, conn);
-            var da = new OleDbDataAdapter(q, conn);
-            OleDbDataReader reader;
-            reader = cmd.ExecuteReader();
-
-            var ds = new DataSet();
-            da.Fill(ds, "Detalii cont");
-           
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -169,8 +161,26 @@ namespace E6_Testare_DesktopApp
 
         }
 
-        private void reportViewer1_Load_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
+            
+            if (reportViewer1.Visible == true)
+            {
+            }
+            else
+            {
+                if (reportViewer2.Visible == true)
+                {
+                   
+                }
+                else
+                {
+                    if (reportViewer3.Visible == true)
+                    {
+                        
                     }
+                }
+            }
+        }
     }
 }
