@@ -54,17 +54,16 @@ namespace E6_Testare_DesktopApp
 
         private void btnMeniuriSucces_Click(object sender, EventArgs e)
         {
-            /*
-            reportViewer1.Clear();
-            this.RezervariRestaurantTableAdapter.Fill(this.TestareBDDataSet4.RezervariRestaurant);
             
-            reportDataSource.Name = "Reports_GetReport2Report";
-            reportDataSource.Value = TestareBDDataSet4.RezervariRestaurant;
-            ReportDataSource rds = new ReportDataSource("TestareBDDataSet4", RezervariRestaurantTableAdapter.);
-            reportViewer1.LocalReport.DataSources.Add(rds);
-            reportViewer1.LocalReport.ReportEmbeddedResource = "Rezervari totale.rdlc";
-            reportViewer1.RefreshReport();
-            */
+
+           // reportViewer1.Clear();
+           // this.RezervariRestaurantTableAdapter.Fill(this.TestareBDDataSet4.RezervariRestaurant);
+           // DataSet ds = GetDataSet();
+            //ReportDataSource rds = new ReportDataSource("RezervariRestaurant", RezervariRestaurantTableAdapter);
+            //ReportViewer1.LocalReport.DataSources.Clear();
+           // ReportViewer1.LocalReport.DataSources.Add(rds);
+           // ReportViewer1.LocalReport.Refresh();
+
         }
 
         private void btnEvenimente_Click(object sender, EventArgs e)
